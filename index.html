@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat 11 - O Guia Definitivo</title>
+    <style>
+        /* CSS para estilizar a página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0c0c0c;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('https://www.mortalkombat.com/static/mk11-home-bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(26, 26, 26, 0.95);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px #000;
+            border-bottom: 2px solid #ffcc00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .section-title {
+            color: #ffcc00;
+            font-size: 2em;
+            margin-top: 30px;
+            border-bottom: 1px solid #ffcc00;
+            padding-bottom: 5px;
+        }
+        .intro-text {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .character-selection {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .character-button {
+            padding: 12px 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+            margin: 0 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .character-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        #subzero-btn {
+            background-color: #0077b3;
+            color: white;
+        }
+        #scorpion-btn {
+            background-color: #b33900;
+            color: white;
+        }
+        .content {
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .content h3 {
+            color: #ffcc00;
+            border-left: 3px solid #ffcc00;
+            padding-left: 10px;
+        }
+        .character-info img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            background-color: rgba(45, 45, 45, 0.8);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        /* Efeito de fade-in para as seções */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mortal Kombat 11</h1>
+        </header>
+
+        <p class="intro-text">
+            Explore o universo de **Mortal Kombat 11**, um jogo de luta aclamado que mergulha na história épica da franquia. Conheça sua trama, personagens icônicos e os golpes que o tornam inesquecível.
+        </p>
+
+        <div class="character-selection">
+            <h3>Escolha seu Guerreiro:</h3>
+            <button id="subzero-btn" class="character-button">Sub-Zero</button>
+            <button id="scorpion-btn" class="character-button">Scorpion</button>
+        </div>
+
+        <div id="general-content" class="content" style="display: block;">
+            <h2 class="section-title">Sobre o Jogo</h2>
+            <p><strong>Mortal Kombat 11</strong>, desenvolvido pela NetherRealm Studios, é o décimo primeiro título principal da série. O jogo é famoso por seus gráficos realistas, jogabilidade fluida e pelo sistema de variação de golpes que permite customizar os personagens. A trama gira em torno da Guardiã do Tempo, Kronika, que tenta reescrever a história para um universo perfeito, sem Raiden e Liu Kang. Isso causa um encontro de personagens de diferentes eras do tempo, resultando em confrontos épicos entre heróis e vilões de passado e presente.</p>
+
+            <h2 class="section-title">Personagens e Referências</h2>
+            <p>O jogo traz um elenco de mais de 25 personagens, incluindo os favoritos dos fãs e novos lutadores. As referências são vastas, desde os clãs Lin Kuei e Shirai Ryu até as mitologias chinesa e japonesa. A história aprofunda o lore, mostrando o impacto das escolhas de cada personagem ao longo do tempo. Os diálogos entre os lutadores antes de cada batalha são repletos de referências a jogos anteriores.</p>
+        </div>
+
+        <div id="subzero-content" class="content">
+            <h2 class="section-title">Sub-Zero (Kuai Liang)</h2>
+            <div class="character-info">
+                <img src="https://www.mortalkombat.com/static/mk11-characters-subzero-1.png" alt="Sub-Zero">
+                <p>O grão-mestre do clã Lin Kuei, **Sub-Zero** é um guerreiro honrado que domina a criocinese. Sua história em MK11 o coloca em um papel crucial para deter as ambições de Kronika, unindo forças até mesmo com seu eterno rival, Scorpion. Ele busca reformar seu clã, transformando-o de uma sociedade de assassinos em protetores do Plano Terreno.</p>
+                <h3>Golpes Especiais e Combos</h3>
+                <ul>
+                    <li><strong>Bola de Gelo:</strong> Congela o inimigo.</li>
+                    <li><strong>Mergulho do Gelo:</strong> Sub-Zero desliza no chão e ataca as pernas do oponente.</li>
+                    <li><strong>Criação de Clones de Gelo:</strong> Cria um clone de gelo que pode congelar o inimigo.</li>
+                    <li><strong>Fatal Blow (Quebrador de Gelo):</strong> Um ataque brutal que envolve a criação de uma arma de gelo gigantesca.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="scorpion-content" class="content">
+            <h2 class="section-title">Scorpion (Hanzo Hasashi)</h2>
+            <div class="character-info">
+                <img src="https://www.mortalkombat.com/static/mk11-characters-scorpion-1.png" alt="Scorpion">
+                <p>O ninja espectro do clã Shirai Ryu. **Scorpion** é movido pela vingança e por um passado trágico. Em MK11, a versão mais velha de Hanzo Hasashi confronta seu eu mais jovem e raivoso, em uma jornada de auto-descoberta e redenção. Ele se junta aos heróis para proteger a realidade, mesmo sendo atormentado por sua natureza de espectro do inferno.</p>
+                <h3>Golpes Especiais e Combos</h3>
+                <ul>
+                    <li><strong>"Get over here!":</strong> O golpe icônico da kunai com corrente, que puxa o inimigo para perto.</li>
+                    <li><strong>Fogo do Inferno:</strong> Teletransporte para trás do inimigo, seguido de um ataque de fogo.</li>
+                    <li><strong>Queimadura Mortal:</strong> Lança uma rajada de fogo em direção ao oponente.</li>
+                    <li><strong>Fatal Blow (Fúria do Espectro):</strong> Um ataque violento onde Scorpion usa sua espada e o fogo do inferno para massacrar o inimigo.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para a interação dos botões
+        document.addEventListener('DOMContentLoaded', () => {
+            const subzeroBtn = document.getElementById('subzero-btn');
+            const scorpionBtn = document.getElementById('scorpion-btn');
+            const generalContent = document.getElementById('general-content');
+            const subzeroContent = document.getElementById('subzero-content');
+            const scorpionContent = document.getElementById('scorpion-content');
+
+            // Função para mostrar apenas a seção geral
+            function showGeneralContent() {
+                generalContent.style.display = 'block';
+                subzeroContent.style.display = 'none';
+                scorpionContent.style.display = 'none';
+            }
+
+            // Função para mostrar o conteúdo do Sub-Zero
+            function showSubZeroContent() {
+                generalContent.style.display = 'none';
+                subzeroContent.style.display = 'block';
+                scorpionContent.style.display = 'none';
+            }
+
+            // Função para mostrar o conteúdo do Scorpion
+            function showScorpionContent() {
+                generalContent.style.display = 'none';
+                scorpionContent.style.display = 'block';
+                subzeroContent.style.display = 'none';
+            }
+
+            // Eventos de clique para os botões
+            subzeroBtn.addEventListener('click', showSubZeroContent);
+            scorpionBtn.addEventListener('click', showScorpionContent);
+
+            // Garante que o conteúdo geral esteja visível ao carregar
+            showGeneralContent();
+        });
+    </script>
+
+</body>
+</html>
